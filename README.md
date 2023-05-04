@@ -65,7 +65,7 @@ int main(int argc, char** argv) {
 	const int nsamples  = 512;
 	const int nchannels = 16;
 
-	rosneuro::FilterChain<float> chain("float");
+	rosneuro::FilterChain<float> chain;
 
 	if(chain.configure("ChainCfgTest") == false) {
 		ROS_ERROR("Chain configuration failed");
